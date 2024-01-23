@@ -60,6 +60,16 @@ public class Customer {
     }
 
     @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", gender=" + gender +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
